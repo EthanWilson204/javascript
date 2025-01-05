@@ -1,0 +1,45 @@
+<!DOCTYPE html>     <!-- document type --> 
+<html lang="en">    <!-- HTML Headtag -->   <!-- language (Best Practice) -->
+    
+    <head>              <!-- Headtag -->    <!-- Openning Tag. metadata related to the application -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Flipper 1</title>         <!-- Title of Our Webpage -->
+
+        <!-- CSS. style tags specify the style we wish for our elements to have in our html file-->
+        <!-- To access the specific element we want to style, we need to specifiy the identifier using #-->
+        <!-- We can also change the style of similar items using the tag identifier-->
+        <style> 
+            #green {
+                background-color: green;
+            }
+            #red {
+                background-color: red;
+            }
+            #blue {
+                background-color: blue;
+            }
+
+            button {
+                border-radius: 10px;
+                width: 75px;
+                height: 40px;
+                margin: 5px;
+            }
+        </style>
+
+    </head>             <!-- Closing Tag. Each closing tag has a slash. Each openning tag must have a closing tag-->
+
+    <body>              <!-- Body Tag. Comes right after the headtag -->
+        <h3>Color Flipper! First Coding Project in HTML!</h3>       <!-- h1-h6....denotes a header and its size-->
+        <button id="green" onclick="setColor(id)"> Green</button>   <!-- how to make a button. Note that properties are within the button tag -->
+        <button id="red" onclick="setColor(id)">Red</button>
+        <button id="blue" onclick="setColor(id)">Blue</button>
+        <button onclick="randColor()">Random</button>
+        <script src="index.js"></script>    <!-- This links the html file to the JS file so events can be set up and actions can be done
+                                                Always at the bottom of the body -->
+    </body>
+
+</html>             <!-- HTML Closing Tag -->
+
+<!-- To see the changes happening in real time, start the html document in a live server (right click). Autosave is on -->
